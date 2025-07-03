@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Bookmarks</title>
+    <link rel="stylesheet" href="bookmarks.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Problem Bookmarks</h1>
+            <div class="stats">
+                <div class="count" id="bookmarkCount">0</div>
+                <button class="clear-all-btn" id="clearAllBtn">Clear All</button>
+            </div>
+        </div>
+        
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="searchInput" 
+                class="search-input" 
+                placeholder="Search bookmarks..."
+                autocomplete="off"
+            >
+            <button class="search-btn" id="searchBtn">Search</button>
+        </div>
+        
+        <div class="bookmarks-container" id="bookmarksContainer">
+            <div class="loading" id="loadingIndicator">
+                🔍 Loading bookmarks...
+            </div>
+            
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <h3>No bookmarks yet!</h3>
+                <p>Start bookmarking problems to see them here.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="bookmarks.js"></script>
+</body>
+</html>
